@@ -1,4 +1,4 @@
-# Linux Kernel Driver Modules — Interview Practice Kit
+# Linux Kernel Driver Modules 
 
 ## Overview
 5 practical kernel modules demonstrating real embedded Linux
@@ -53,18 +53,4 @@ sudo apt install linux-headers-$(uname -r) build-essential
 sudo apt install raspberrypi-kernel-headers build-essential
 ```
 
-## Interview script
-When asked about kernel/driver experience:
 
-"I worked on EN7528HU ONU firmware running TCLinux 3.18.21.
-The firmware stack runs from tcboot bootloader through BSP in
-arch/mips/econet/, HAL drivers like ponhal.ko and pon_mac.ko
-in modules/private/ko/, up through OSI layers to omci_app
-and tr069d daemons.
-
-I understand how Device Tree in the BSP triggers HAL driver probe,
-how /dev/omci bridges pon_mac.ko to omci_app userspace,
-and how the dual-bank OTA upgrade works via the reservearea
-boot flag in SPI-NAND flash.
-
-These modules demonstrate the core driver patterns I work with."
