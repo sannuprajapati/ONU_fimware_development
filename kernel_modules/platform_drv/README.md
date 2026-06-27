@@ -50,7 +50,7 @@ Without hardware, the driver loads but probe() is not triggered.
 Use dmesg to verify module load. For full testing, add DTB entry
 or use platform_device_register() in a test module.
 
-## Interview talking points
+## Imp points
 1. ioremap maps physical silicon register address to kernel VA —
    after this, readl(base + 0x10) directly reads hardware register
 2. devm_ioremap_resource auto-unmaps on driver remove — no memory leak
