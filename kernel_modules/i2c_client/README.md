@@ -60,7 +60,7 @@ sudo rmmod i2c_client
 sudo rmmod i2c-stub
 ```
 
-## Interview talking points
+## imp points
 1. probe() is called by kernel when DTB compatible string matches driver
 2. devm_kzalloc auto-frees memory when driver is removed — prevents leaks
 3. i2c_set_clientdata stores per-device state — supports multiple device instances
