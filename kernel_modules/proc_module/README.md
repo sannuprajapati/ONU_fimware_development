@@ -64,7 +64,7 @@ make test
 sudo rmmod proc_module
 ```
 
-## Interview talking points
+##  points
 1. seq_file handles large output correctly — splits across multiple read() calls
    unlike sprintf to a static buffer which can overflow
 2. atomic_t for counters — safe from multiple CPUs without mutex
