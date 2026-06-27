@@ -48,7 +48,7 @@ sudo rmmod gpio_led
 dmesg | tail -5
 ```
 
-## Interview talking points
+## Imp points
 1. gpio_request reserves the GPIO exclusively — prevents conflicts
 2. Timer callback runs in softirq context — cannot sleep (no mutex, no schedule())
 3. del_timer_sync waits for running callback — prevents use-after-free
