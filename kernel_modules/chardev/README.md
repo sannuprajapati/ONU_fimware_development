@@ -38,7 +38,7 @@ sudo rmmod chardev
 dmesg | tail -5
 ```
 
-## Interview talking points
+## Imp points
 1. file_operations maps system calls (open/read/write) to driver functions
 2. copy_to_user/copy_from_user needed because kernel and user have
    separate virtual address spaces — cannot dereference user pointers directly
